@@ -1,0 +1,34 @@
+<body>
+
+    <h1>🎯 Placement Prep Tracker</h1>
+
+    <h2>Total Problems Solved: <span id="total">0</span></h2>
+
+    <select id="topic">
+        <option value="Arrays">Arrays</option>
+        <option value="Strings">Strings</option>
+        <option value="DP">DP</option>
+        <option value="Graphs">Graphs</option>
+        <option value="Trees">Trees</option>
+    </select>
+
+    <button onclick="addProblem()">Add Problem</button>
+    <!-- ✅ Added Reset Button -->
+    <button onclick="resetData()">Reset All</button>
+
+    <h3>Topic Progress:</h3>
+    <ul id="topicList"></ul>
+
+    <!-- ✅ Weak Topic -->
+    <h3 id="weakTopic"></h3>
+
+    <!-- ✅ Chart Canvas -->
+    <canvas id="progressChart" width="400" height="200"></canvas>
+
+    <!-- ✅ Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Your Script -->
+    <script src="script.js"></script>
+
+</body>
